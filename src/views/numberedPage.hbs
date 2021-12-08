@@ -1,0 +1,38 @@
+
+<ul>
+{{#results.results}}
+<div class="container bg-light py-3 my-3">
+    
+    <a><img src="https://image.tmdb.org/t/p/w500{{this.poster_path}}" class="rounded mx-auto d-block" ></a>
+    <h1 class="text-center"><a = href="/movies/{{this._id}}" class="text-secondary ">{{this.original_title}}</a></h1>
+    <h5>Genres: </h5><p>{{this.genres}}</p>
+    <p>Vote average: {{this.vote_average}}</p>
+    <p>Vote count: {{this.vote_count}}</p>
+    <p>Production country: {{this.production_countries}}</p>
+    <hr><p>Overview: {{this.overview}}</p>
+    
+</div>
+{{/results.results}}
+</ul>
+
+
+
+<nav aria-label="Page navigation example" class="nav justify-content-center"> 
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="/movies?page=1">First Page</a></li>
+    
+    {{#results.previous.page}}
+    <li class="page-item"><a class="page-link" href="/movies?page={{this}}">{{this}}</a></li>
+    {{/results.previous.page}}
+    
+    <li class="page-item"><a class="page-link" href="#">current page</a></li>
+    
+    {{#results.next.page}}
+    <li class="page-item"><a class="page-link" href="/movies?page={{this}}">{{this}}</a></li>
+    {{/results.next.page}}
+
+    {{#results.finalPage}}
+    <li class="page-item"><a class="page-link" href="/movies?page={{this}}">Last Page</a></li>
+    {{/results.finalPage}}
+  </ul>
+</nav>

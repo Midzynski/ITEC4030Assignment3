@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <title>IMDB Movie Database </title>
+</head>
+
+<body>
+  <div class="container-lg">
+  
+  <div class="box"><h1>IMDB Movie Database</h1>
+
+  <form>
+  <div class="form-group">
+    <label for="Title">Title</label>
+    <input type="title" class="form-control" id="titleInput" placeholder="Please enter title here">
+  </div>
+  <div class="form-group">
+    <label for="Production Country">Production Country</label>
+    <select class="form-control" id="productionCountrySelection">
+      <option>US</option>
+      <option>Canada</option>
+      <option>India</option>
+      <option>China</option>
+      <option>Japan</option>
+      <option>France</option>
+      <option>Spain</option>
+      <option>South Korea</option>
+      <option>Italy</option>
+      <option>Germany</option>
+      <option>UK</option>
+      <option>Russia</option>
+      <option>Argentina</option>
+      <option>Indonesia</option>
+      <option>Brazil</option>
+      <option>...</option>
+    </select>
+  </div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="actionCheckbox" value="action" />
+  <label class="form-check-label" for="actionCheckbox">Action</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="adventureCheckbox" value="adventure" />
+  <label class="form-check-label" for="adventureCheckbox">Adventure</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="animatedCheckbox" value="animated" />
+  <label class="form-check-label" for="animatedCheckbox">Animated</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="comedyCheckbox" value="comedy" />
+  <label class="form-check-label" for="comedyCheckbox">Comedy</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="dramaCheckbox" value="drama" />
+  <label class="form-check-label" for="dramaCheckbox">Drama</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="fantasyCheckbox" value="fantasy" />
+  <label class="form-check-label" for="fantasyCheckbox">Fantasy</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="historicalCheckbox" value="historical" />
+  <label class="form-check-label" for="historicalCheckbox">Historical</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="horrorCheckbox" value="horror" />
+  <label class="form-check-label" for="horrorCheckbox">Horror</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="scientFictionCheckbox" value="scienceFiction" />
+  <label class="form-check-label" for="scienceFictionCheckbox">Science Fiction</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="thrillerCheckbox" value="thriller" />
+  <label class="form-check-label" for="thrillerCheckbox">Thriller</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="westernCheckbox" value="western" />
+  <label class="form-check-label" for="westernCheckbox">Western</label>
+</div>
+
+<div class="d-flex flex-row-reverse">
+        <input class="btn btn-primary" type="submit" value="Submit" name="submit" id="submit">
+        <input class="btn btn-secondary me-2" type="reset" value="Reset" name="reset" id="reset">
+      </div>
+</form>
+
+  </div> 
+    
+    {{{body}}}
+  
+</div>
+</body>
+
+</html>

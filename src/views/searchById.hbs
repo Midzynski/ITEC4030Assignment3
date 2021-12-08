@@ -1,0 +1,15 @@
+<ul>
+{{#results}}
+<div class="container bg-light py-3 my-3">
+    
+    <a><img src="https://image.tmdb.org/t/p/w500{{this.poster_path}}" class="rounded mx-auto d-block" ></a>
+    <h1 class="text-center"><a = href="/movies/{{this._id}}" class="text-secondary ">{{this.original_title}}</a></h1>
+    <h5>Genres: </h5><p>{{this.genres}}</p>
+    <p>Vote average: {{this.vote_average}}</p>
+    <p>Vote count: {{this.vote_count}}</p>
+    <p>Production country: {{this.production_countries}}</p>
+    <hr><p>Overview: {{this.overview}}</p>
+    
+</div>
+{{/results}}
+</ul>
